@@ -67,6 +67,11 @@ function pug() {
 //         .pipe(browsersync.stream())  // обновляет браузер
 // }
 
+function fontsToDist() {
+    return src(path.src.fonts)
+      .pipe(dest(path.build.fonts))
+  }
+
 function fonts() {
   src(path.src.fonts)
     .pipe(ttf2woff())
@@ -120,11 +125,12 @@ function clean() {
     return del(path.clean); // удаляет ненужные файлы
 }
 
-const build = series(parallel(pug, scss, js, fonts, images, watchFiles, browserSync), clean); //
+const build = series(parallel(pug, scss, js, fonts, images, fontsToDist, watchFiles, browserSync), clean); //
 
 
 exports.pug = pug;
 exports.watchFiles = watchFiles;
+exports.fontsToDist = fontsToDist;
 exports.scss = scss;
 exports.fonts = fonts;
 exports.js = js;

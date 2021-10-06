@@ -1,7 +1,12 @@
 * {
-    font-family: $base-ff;
+    font-family: $base-ff, sans-serif;
     font-size: $base-fsz;
     font-weight: $base-fw;
+    color: $base-c;
+}
+
+body {
+    background: #000;
 }
 
 .container {
@@ -11,4 +16,6 @@
 
 .button {}
 
-.wrapper {}
+.wrapper {
+    width: 100%;
+}
