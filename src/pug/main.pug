@@ -1,52 +1,51 @@
-main.main
-  .main__container.container 
-    include fullscreen
+main.main  
+  .main__box.fullscreen-box
+    .main__container.container 
+      include fullscreen
+  .main__box.popular-exercises-box
+    .main__container.container 
+      include popular-exercises
+  .main__box.trainers-box
+    .main__container.container 
+      include trainers
+  .main__box
+    .main__container.container 
+      .video-link
+        .video-link__items 
+          a.video-link__item(href='#')
+            span.video-link__number 01
+            .video-link__name-block 
+              h4.video-link__name Workout at Home
+              p.video-link__amount 15 videos
+            .video-link__btn
+              img.video-link__img(src="img/icons/arrow-video-link.svg", alt="arrow-video-link")
+          a.video-link__item(href='#')
+            span.video-link__number 02
+            .video-link__name-block 
+              h4.video-link__name Stay Strong and Fit
+              p.video-link__amount 48 videos
+            .video-link__btn
+              img.video-link__img(src="img/icons/arrow-video-link.svg", alt="arrow-video-link")
+          a.video-link__item(href='#')
+            span.video-link__number 03
+            .video-link__name-block 
+              h4.video-link__name High Intensity
+              p.video-link__amount 25 videos
+            .video-link__btn
+              img.video-link__img(src="img/icons/arrow-video-link.svg", alt="arrow-video-link")
+          a.video-link__item(href='#')
+            span.video-link__number 04
+            .video-link__name-block 
+              h4.video-link__name Simple Workout
+              p.video-link__amount 35 videos
+            .video-link__btn
+              img.video-link__img(src="img/icons/arrow-video-link.svg", alt="arrow-video-link")
+          a.video-link__item(href='#')
+            span.video-link__number 05
+            .video-link__name-block 
+              h4.video-link__name Burn Calories
+              p.video-link__amount 35 videos
+            .video-link__btn
+              img.video-link__img(src="img/icons/arrow-video-link.svg", alt="arrow-video-link")
 
-    section.popular-exercises.main__section 
-      .popular-exercises-head.popular-exercises__head
-        h4.popular-exercises-head__title Popular Exercises
-        a.popular-exercises-head__link See More Exercises
-      .cards.popular-exercises__main 
-        .cards__items
-          a.cards__item(href='#')
-            .cards__video-block
-              img.cards__video-image(src="img/Cards-1.png", alt="Cards-6")
-              span.cards__video-text 58:24
-            .cards__item-caption
-              h5.cards__title Treadmill
-              p.cards__subtitle 250 est calories 
-          a.cards__item(href='#')
-            .cards__video-block
-              img.cards__video-image(src="img/Cards-2.png", alt="Cards-6")
-              span.cards__video-text 58:24
-            .cards__item-caption
-              h5.cards__title Stretching
-              p.cards__subtitle 250 est calories 
-          a.cards__item(href='#')
-            .cards__video-block
-              img.cards__video-image(src="img/Cards-3.png", alt="Cards-6")
-              span.cards__video-text 58:24
-            .cards__item-caption
-              h5.cards__title Yoga
-              p.cards__subtitle 250 est calories 
-          a.cards__item(href='#')
-            .cards__video-block
-              img.cards__video-image(src="img/Cards-4.png", alt="Cards-6")
-              span.cards__video-text 58:24
-            .cards__item-caption
-              h5.cards__title Running
-              p.cards__subtitle 250 est calories 
-          a.cards__item(href='#')
-            .cards__video-block
-              img.cards__video-image(src="img/Cards-5.png", alt="Cards-6")
-              span.cards__video-text 58:24
-            .cards__item-caption
-              h5.cards__title Lifting
-              p.cards__subtitle 250 est calories 
-          a.cards__item(href='#')
-            .cards__video-block
-              img.cards__video-image(src="img/Cards-6.png", alt="Cards-6")
-              span.cards__video-text 58:24
-            .cards__item-caption
-              h5.cards__title PushUp
-              p.cards__subtitle 250 est calories 
+    
