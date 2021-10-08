@@ -1,7 +1,6 @@
 # WorkoutLanding
 
-## Верстка обучающего макета 
-## Очень легкий лендинг
+## Верстка обучающего макета. Landing Page
 
 Ссылка на сайт https://konmit.github.io/WorkoutLanding/
 
